@@ -1,0 +1,4 @@
+.glassnav {
+    background: rgba(255, 0, 238, 0.164); /* Adjust transparency as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur effect */
+  }

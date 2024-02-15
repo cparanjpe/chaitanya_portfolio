@@ -1,0 +1,7 @@
+hr {
+    height: 3px; /* Set your desired height */
+    width: 5%;
+    margin-top: 5px;   /* Set your desired width as a percentage of the container */
+    margin-bottom:4rem ;   /* Set your desired width as a percentage of the container */
+    background-color: white; /* Optional: Set the color of the horizontal line */
+  }
