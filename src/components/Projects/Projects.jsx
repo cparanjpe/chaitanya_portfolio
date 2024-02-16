@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css';
 import image from '../../assets/egrocery.png'
 import image1 from '../../assets/chatnow.png'
+import {motion} from "framer-motion";
 
 function Projects() {
     const projects = [
@@ -43,14 +44,14 @@ function Projects() {
     
     <>
     
-    <div className='h-[auto] bg-slate-800 p-20' id='projects'>
-      <div className='flex items-center flex-col'>
+    <div className='h-[auto] bg-slate-800 md:p-20 p-5' id='projects'>
+      <motion.div initial={{opacity:0.5, scale:0.70,y:-10}} transition={{type:"spring",stiffness:100,damping:50,duration:1}} whileInView={{opacity:1, scale:1}} className='flex items-center flex-col'>
     <h1 className='text-5xl font-bold mb-5'>Projects</h1>
     <hr/>
-    </div>
-    <div className='project-container flex flex-wrap gap-10'>
+    </motion.div>
+    <motion.div initial={{opacity:0.5, scale:0.70,y:-10}} transition={{type:"spring",stiffness:100,damping:50,duration:1}} whileInView={{opacity:1, scale:1}} className='project-container flex flex-wrap gap-10'>
         {projects.map((project,index)=>(
-            <div class="max-w-[calc(50%-20px)] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="md:max-w-[calc(50%-20px)]  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href={project.url} target="_blank">
                 <img class="rounded-t-lg" src={project.image} alt="" />
             </a>
@@ -96,7 +97,7 @@ function Projects() {
             </div>
         </div> */}
 
-    </div>
+    </motion.div>
     
     
     </div>

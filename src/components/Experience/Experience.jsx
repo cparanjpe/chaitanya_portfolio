@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.css';
+import {motion} from "framer-motion";
 // import img from '../../assets/me.png'
 
 function Experience() {
@@ -8,14 +9,14 @@ function Experience() {
   return (
     <>
     
-    <div className='h-[100vh] bg-slate-800 p-20' id='work'>
-      <div className='flex items-center flex-col'>
+    <div className='md:h-[100vh] bg-slate-800 p-20' id='work'>
+      <motion.div initial={{opacity:0.5, scale:0.70}} transition={{type:"spring",stiffness:100,damping:50,duration:1}} whileInView={{opacity:1, scale:1}} className='flex items-center flex-col'>
     <h1 className='text-5xl font-bold mb-5'>Education & Experience</h1>
     <hr/>
     {/* <h3 className='text-lg w-[60%] text-center'>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</h3> */}
-    </div>
+    </motion.div>
     
-<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+<motion.ol initial={{opacity:0.5, scale:0.70}} transition={{type:"spring",stiffness:100,damping:50,duration:1}} whileInView={{opacity:1, scale:1}} class="relative border-s border-gray-200 dark:border-gray-700">                  
     <li class="mb-10 ms-6">            
         <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white  dark:ring-gray-900 dark:bg-purple-500">
             <svg class="w-2.5 h-2.5 text-purple-500 dark:text-pink-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -50,7 +51,7 @@ function Experience() {
         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">10th: 91.6%  |  12th:95%</time>
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">Passed 10th in 2019 and 12th in 2021.Represented INDIA & Won Silver Medal in CASTIC(China adolescents science and technology innovation contest). </p>
     </li>
-</ol>
+</motion.ol>
 
 
    
